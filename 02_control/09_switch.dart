@@ -3,6 +3,7 @@ import 'dart:math';
 main() {
   final rnd = Random().nextInt(7);
   print(rnd);
+
   switch (rnd) {
     case 0:
       print('Monday');
