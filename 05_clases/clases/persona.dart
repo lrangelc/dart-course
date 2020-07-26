@@ -19,8 +19,15 @@ class Persona {
     _bio = value.toLowerCase();
   }
 
-  // Constructores
+  // // Constructores
+  // Persona(int edad, String nombre) {
+  //   this.edad = edad;
+  //   this.nombre = nombre;
+  //   print('constructor');
+  //   _bio = 'Hi!';
+  // }
 
+  Persona({this.edad = 0, this.nombre = 'Sin Nombre'});
   // metodos
   @override
   String toString() {
