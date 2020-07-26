@@ -2,7 +2,8 @@ class Persona {
   // Campos o Propiedades
   String nombre;
   int edad;
-  String bio;
+  String _bio = 'Hi! I\'m a private property';
+
   // Get y Set
 
   // Constructores
@@ -12,9 +13,9 @@ class Persona {
   String toString() {
     return '''
   {
-    nombre: $nombre, 
+    nombre: $nombre,
     edad: $edad,
-    bio: $bio
+    bio: $_bio
   }''';
   }
 }
