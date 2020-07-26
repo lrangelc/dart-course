@@ -13,10 +13,11 @@ main() {
   Persona persona = new Persona();
   persona.nombre = 'Luis';
   persona.edad = 40;
-  // persona.bio = 'Nacio en Guatemala';
+  persona.bio = 'Nacio EN Guatemala';
 
   persona
     ..nombre = 'Reyna'
     ..edad = 37;
   print(persona);
+  print(persona.info);
 }

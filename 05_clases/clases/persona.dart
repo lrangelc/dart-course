@@ -5,6 +5,19 @@ class Persona {
   String _bio = 'Hi! I\'m a private property';
 
   // Get y Set
+  String get info {
+    return 'Hello World! from Persona';
+  }
+
+  // String get bio => _bio.toUpperCase();
+  String get bio {
+    return _bio.toUpperCase();
+  }
+
+  // set bio(String value) => _bio = value.toLowerCase();
+  set bio(String value) {
+    _bio = value.toLowerCase();
+  }
 
   // Constructores
 
@@ -15,7 +28,9 @@ class Persona {
   {
     nombre: $nombre,
     edad: $edad,
-    bio: $_bio
+    _bio: ${this.bio},
+    _bio: $bio,
+    _bio: $_bio,
   }''';
   }
 }
