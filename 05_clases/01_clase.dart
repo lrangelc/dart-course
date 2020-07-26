@@ -12,6 +12,10 @@ main() {
 
   // Persona persona = new Persona(40, nombre: 'Luis Rangel');
   Persona persona = new Persona(edad: 40);
+  Persona persona1 = new Persona.persona30('Abdel');
+  Persona persona2 = new Persona.persona40('Abdel');
+  print(persona1);
+  print(persona2);
   print(persona);
   persona.nombre = 'Luis';
   persona.edad = 40;
