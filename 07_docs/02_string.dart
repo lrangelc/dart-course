@@ -18,6 +18,11 @@ main(List<String> args) {
   print('Substring: ${nombreCompleto.substring(2)}');
   print('Indexof: ${nombreCompleto.indexOf(' ')}');
   print('Split: ${nombreCompleto.split(' ')}');
-   String[]listado = nombreCompleto.splict('');
+  print('Split: ${nombreCompleto.split('')}');
+  List<String> listado = nombreCompleto.split(' ');
   print(listado);
+  print(
+      '${nombreCompleto.substring(0, nombreCompleto.length - 1)}${nombreCompleto.substring(nombreCompleto.length - 1).toUpperCase()}');
+  print(
+      '${nombreCompleto.substring(0, nombreCompleto.length - 1)}${nombreCompleto[nombreCompleto.length - 1].toUpperCase()}');
 }
