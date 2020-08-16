@@ -19,4 +19,23 @@ main(List<String> args) {
 
   persona.removeWhere((key, value) => key == 'edad');
   print(persona);
+
+  persona.addAll({'hola': 'adios'});
+  persona.addAll({'cool': 'adios'});
+  persona.addAll({'edad': 20});
+  persona.addAll({'casado': true});
+  persona.forEach((key, value) {
+    print('key: $key, value: $value');
+  });
+
+  final xx = persona.map((String key, Object value) {
+    return MapEntry(key.toUpperCase(),
+        value.runtimeType == String ? value.toString().toUpperCase() : value);
+  });
+
+  print(xx);
+  print(xx['EDAD']);
+  print(xx['EDAD'].runtimeType);
+  print(xx['CASADO']);
+  print(xx['CASADO'].runtimeType);
 }
